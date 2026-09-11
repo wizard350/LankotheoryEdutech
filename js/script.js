@@ -251,4 +251,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+
+    // ================= MOBILE NAVIGATION =================
+
+const menuToggle = document.getElementById("menuToggle");
+const navbar = document.querySelector(".navbar");
+
+if (menuToggle && navbar) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navbar.classList.toggle("show");
+
+        // Change hamburger icon to X
+        const icon = menuToggle.querySelector("i");
+
+        if (navbar.classList.contains("show")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        } else {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+
+    });
+
+    // Close menu when a navigation link is clicked
+    const navLinks = navbar.querySelectorAll("a");
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navbar.classList.remove("show");
+
+            const icon = menuToggle.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        });
+
+    });
+
+}
 });
