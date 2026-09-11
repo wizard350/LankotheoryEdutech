@@ -1237,8 +1237,18 @@
                     );
 
 
-                courses.forEach(
-                    function (course, index) {
+             <button
+    type="button"
+    class="course-button"
+    onclick="openCourse('${student.program}', '${course}')"
+>
+    Continue
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
+
+                if (typeof updateDashboardLearning === "function") {
+    updateDashboardLearning();
+}
 
 
                         const courseItem =
