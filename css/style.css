@@ -150,14 +150,14 @@ img {
    NAVBAR
 ========================= */
 
-.navbar {
+.navMenu {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 22px;
 }
 
-.navbar a {
+.navMenu a {
     position: relative;
     color: #334155;
     font-size: 14px;
@@ -166,7 +166,7 @@ img {
     transition: 0.3s ease;
 }
 
-.navbar a::after {
+.navMenu a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -178,13 +178,13 @@ img {
     transition: 0.3s ease;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navMenu a:hover,
+.navMenu a.active {
     color: var(--primary);
 }
 
-.navbar a:hover::after,
-.navbar a.active::after {
+.navMenu a:hover::after,
+.navMenu a.active::after {
     width: 100%;
 }
 
@@ -4944,7 +4944,7 @@ img {
         display: flex;
     }
 
-    .nav-Menu a {
+    .nav- a {
         padding: 12px 0;
         width: 100%;
     }
