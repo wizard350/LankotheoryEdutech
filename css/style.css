@@ -4927,7 +4927,7 @@ img {
         display: block;
     }
 
-    .nav-bar {
+    .nav-Menu {
         display: none;
         position: absolute;
         top: 100%;
@@ -4940,11 +4940,11 @@ img {
         z-index: 1000;
     }
 
-    .nav-bar.active {
+    .nav-Menu.active {
         display: flex;
     }
 
-    .nav-bar a {
+    .nav-Menu a {
         padding: 12px 0;
         width: 100%;
     }
